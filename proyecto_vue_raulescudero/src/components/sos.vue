@@ -16,13 +16,17 @@ const sos = useCollection(collection(db, 'sos'));
         <h2>{{ curso.nombre }}</h2>
         <p>{{ curso.duracion }}Horas</p>
         <p>{{ curso.categoria }}</p>
-        <img :src="`http://localhost:5173/src/assets/cursos/${curso.imagen}`" alt="Imagen Curso" class="fotos">
+        <img :src="`https://proyectovue-90870.web.app/assets/${curso.imagen}`" alt="Imagen Curso" class="fotos">
+        <!-- Si ejecutamos el proyecto en localhost comente la linea de arriba y descomente la de abajo -->
+        <!-- <img :src="`http://localhost:5173/src/assets/cursos/${curso.imagen}`" alt="Imagen Curso" class="fotos"> -->
+        <a href="https://proyectovue-90870.web.app/pdfs/main.pdf" target="_blank">Obtener Información</a>
+
         <button>Inscribirse</button>
     </div>
 </template>
     
 <style>
-.curso{
+.curso {
     border: solid 2px rgb(255, 255, 255);
     margin-left: 40%;
     margin-right: 40%;

@@ -83,14 +83,15 @@ function updateCurso(id, categoria) {
             <h2>{{ curso.nombre }}</h2>
             <p>{{ curso.duracion }} Horas</p>
             <p>{{ curso.categoria }}</p>
-            <img :src="`http://localhost:5173/src/assets/cursos/${curso.imagen}`" alt="Imagen Curso" class="fotos">
+            <img :src="`https://proyectovue-90870.web.app/assets/${curso.imagen}`" alt="Imagen Curso" class="fotos">
+            <!-- Si ejecutamos el proyecto en localhost comente la linea de arriba y descomente la de abajo -->
+            <!-- <img :src="`http://localhost:5173/src/assets/cursos/${curso.imagen}`" alt="Imagen Curso" class="fotos"> -->
             <!-- Botones para realizar acciones -->
             <button @click="borrarCurso(curso.id, 'programacion')">Borrar</button>
             <br>
             <p>Rellene el formulario de creacion y pulse editar</p>
             <br>
             <button @click="updateCurso(curso.id, 'programacion')">Editar</button>
-
         </div>
 
         <!-- Listamos los cursos -->
@@ -101,7 +102,9 @@ function updateCurso(id, categoria) {
             <h2>{{ curso.nombre }}</h2>
             <p>{{ curso.duracion }}Horas</p>
             <p>{{ curso.categoria }}</p>
-            <img :src="`http://localhost:5173/src/assets/cursos/${curso.imagen}`" alt="Imagen Curso" class="fotos">
+            <img :src="`https://proyectovue-90870.web.app/assets/${curso.imagen}`" alt="Imagen Curso" class="fotos">
+            <!-- Si ejecutamos el proyecto en localhost comente la linea de arriba y descomente la de abajo -->
+            <!-- <img :src="`http://localhost:5173/src/assets/cursos/${curso.imagen}`" alt="Imagen Curso" class="fotos"> -->
             <!-- Botones para realizar acciones -->
             <button @click="borrarCurso(curso.id, 'ofimatica')">Borrar</button>
             <br>
@@ -118,14 +121,15 @@ function updateCurso(id, categoria) {
             <h2>{{ curso.nombre }}</h2>
             <p>{{ curso.duracion }}Horas</p>
             <p>{{ curso.categoria }}</p>
-            <img :src="`http://localhost:5173/src/assets/cursos/${curso.imagen}`" alt="Imagen Curso" class="fotos">
+            <img :src="`https://proyectovue-90870.web.app/assets/${curso.imagen}`" alt="Imagen Curso" class="fotos">
+            <!-- Si ejecutamos el proyecto en localhost comente la linea de arriba y descomente la de abajo -->
+            <!-- <img :src="`http://localhost:5173/src/assets/cursos/${curso.imagen}`" alt="Imagen Curso" class="fotos"> -->
             <!-- Botones para realizar acciones -->
             <button @click="borrarCurso(curso.id, 'sos')">Borrar</button>
             <br>
             <p>Rellene el formulario de creacion y pulse editar</p>
             <br>
             <button @click="updateCurso(curso.id, 'sos')">Editar</button>
-
         </div>
         <br>
     </div>
