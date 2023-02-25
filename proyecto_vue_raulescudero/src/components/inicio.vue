@@ -1,10 +1,5 @@
 <script setup>
-defineProps({
-  msg: {
-    type: String,
-    required: true
-  }
-})
+
 </script>
 
 <template>
@@ -13,7 +8,7 @@ defineProps({
     <h3>Cursos Online</h3>
     <p>Cursos online, en todo el mundo!!
       <br>
-      Informatica -- Telecomunicaciones -- Programacion
+      Informatica -- Programacion -- SOs
       <br>
       Encuentranos hasta en Pakistan, Estados Unidos o Turquia!! Alli donde estes llegaran nuestros cursos,
       que mejor que confiar en Rauescu Company para tus cursos. Que me dices, ¿Te vienes con nosotros?
@@ -24,6 +19,8 @@ defineProps({
 <style scoped>
   .desc{
     width: 400px;
+    text-align: center;
+    margin: auto;
   }
 
 </style>

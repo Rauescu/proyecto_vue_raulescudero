@@ -8,24 +8,28 @@
   font-weight: normal;
 }
 
+#salir{
+  border: none;
+  border-radius: 0%;
+}
+
 a,
-.green {
+.green,#salir {
   text-decoration: none;
   color: hsla(160, 100%, 37%, 1);
   transition: 0.4s;
 }
 
 @media (hover: hover) {
-  a:hover {
+  a:hover,#salir:hover {
     background-color: hsla(160, 100%, 37%, 0.2);
   }
 }
 
 @media (min-width: 1024px) {
-  /* body {
-    display: flex;
-    place-items: center;
-  } */
+  body {
+    text-align: center;
+  }
 
   /* #app {
     display: grid;
